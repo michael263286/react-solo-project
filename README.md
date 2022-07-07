@@ -22,7 +22,7 @@ Top 75 NBA is a web application that showcases the top 75 NBA players of all tim
 ---
 
 # Access
-
+* https://top75nba.netlify.app/
 ---
 
 # General Information
