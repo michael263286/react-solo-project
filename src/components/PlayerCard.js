@@ -14,7 +14,7 @@ function PlayerCard({player,hideButton}) {
     dispatch(addStarter(player))
   }
 return(
-  <Card style={{ width: '16rem',color:'white' }}>
+  <Card style={{ width: '18rem',color:'white' }}>
     <Card.Img variant="top" src={player.Image }/>
     <Card.Body style={{ backgroundColor: 'black' }}>
       <Card.Title>{player.Name}
