@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import {Route, Routes} from 'react-router-dom'
+import Home from './routes/Home'
+import Starters from './routes/Starters';
+import TopNav from './components/TopNav';
+import Accolades from './routes/Accolades';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{backgroundImage:`url("https://ysnlive.com/wp-content/uploads/2018/12/23b53f53c317b0f91dc8e0c22a1200e3.jpg")`}}className="App">
+      <TopNav/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/starters' element={<Starters/>}/>
+        <Route path='/accolades' element={<Accolades/>}/>
+      </Routes>
     </div>
   );
 }
